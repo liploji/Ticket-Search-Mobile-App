@@ -24,7 +24,7 @@ const HomeScreen = () => {
       try {
         setIsLoading(true);
         const response = await fetch(
-          `https://app.ticketmaster.com/discovery/v2/events.json?countryCode=CA&city=Toronto&classificationId=${categoryId}&size=${size}&apikey=ndFD67AViBaQIzzYY9bCQ0zHCj3PiOFz`
+          `https://app.ticketmaster.com/discovery/v2/events.json?countryCode=CA&city=Toronto&classificationId=${categoryId}&size=${size}&apikey=ndFD67AViBaQIzzYY9bCQ0zHCj3PiOF`
         );
         const data = await response.json();
         return data._embedded.events;
