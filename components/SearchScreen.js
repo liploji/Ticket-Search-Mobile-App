@@ -15,7 +15,7 @@ const SearchScreen = () => {
       try {
         setIsLoading(true);
         const response = await fetch(
-          `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${query}&countryCode=CA&city=Toronto&apikey=ndFD67AViBaQIzzYY9bCQ0zHCj3PiOFz&size=20`
+          `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${query}&countryCode=CA&city=Toronto&apikey=ndFD67AViBaQIzzYY9&size=20`
         );
         const data = await response.json();
         setSearchResults(data._embedded?.events || []);
